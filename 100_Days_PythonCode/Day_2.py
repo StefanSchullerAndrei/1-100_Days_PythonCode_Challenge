@@ -57,4 +57,37 @@ bmi = weight / (height ** 2)
 
 print(bmi)
 
-print(round(bmi))
+round(3.738492) # Becomes 4
+
+round(3.14159) # Becomes 3
+
+round(3.14159, 2) # Becomes 3.14
+
+print(round(bmi, 2)) #rounding the result to two decimals
+
+score = 0
+
+#User scores a point
+
+score +=1
+print(score)
+
+# f-string
+score = 0
+height = 1.8
+is_winnning = True
+
+print(f"Your score is = {score}, your height is {height}. You are winning is {is_winnning}")
+
+# Day 2 Final Exercise
+# We're going to build a tip calculator.
+# If the bill was $150.00, split between 5 people, with 12% tip.
+# (150.00 / 5) * 1.12 = 33.6
+print("Welcome to the tip calculator!")
+initial_bill = float(input("What was the total bill? "))
+percentage_tip = int(input("What percentage tip would you like to give? 10, 12, or 15? "))
+people = int(input("How many people to split the bill? "))
+bill_per_person = float(initial_bill / people) * (1 + percentage_tip / 100)
+final_bill_per_person = round(bill_per_person, 2)
+
+print(f"Each person should pay: ${final_bill_per_person}")
