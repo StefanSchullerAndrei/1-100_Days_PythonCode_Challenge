@@ -2,7 +2,7 @@
 print("Hello World \nHello World")
 
 # string concatenation or adding 2 string and printing 1 string , use " " as empty string to add spaces.
-print("Hello" + " " + "Benjamin")
+print("Hello" + " " + "Andrei")
 
 # input - represents a prompt for the user.
 print("Hello " + input("What is your name?"))
