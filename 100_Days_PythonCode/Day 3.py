@@ -125,6 +125,7 @@ if extra_cheese == "Y":
 
 print(f"The total amount for the pizza is ${bill}")
 
+#Final project of Day 3
 print('''
 *******************************************************************************
           |                   |                  |                     |
