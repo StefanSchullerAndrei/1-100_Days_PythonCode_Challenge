@@ -138,7 +138,7 @@ word_list = ["aardvark", "baboon", "camel"]
 #     print(stages[lives])
 
 
-# STEP 5
+# IMPROVING THE USER EXPERIENCE!
 
 # import random
 # from hangman_words import word_list
