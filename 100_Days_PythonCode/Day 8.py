@@ -86,7 +86,7 @@ def encrypt(original_text, shift_amount):
 
 
 # TODO-3: Call the 'encrypt()' function and pass in the user inputs. You should be able to test the code and encrypt a message
-
+# encrypt(original_text=text, shift_amount=shift)
 
 # -------------------------------------------------------------------
 # def encrypt(original_text, shift_amount):
@@ -116,17 +116,17 @@ def encrypt(original_text, shift_amount):
 
 # TODO-3: Combine the 'encrypt()' and 'decrypt()' functions into one function called 'caesar()'.
 #  Use the value of the user chosen 'direction' variable to determine which functionality to use.
-def caesar(original_text, shift_amount, encode_or_decode):
-    output_text = ""
-    for letter in original_text:
-        if encode_or_decode == "decode":
-            shift_amount *= -1
+# def caesar(original_text, shift_amount, encode_or_decode):
+#     output_text = ""
+#     for letter in original_text:
+#         if encode_or_decode == "decode":
+#             shift_amount *= -1
 
-        shifted_position = alphabet.index(letter) + shift_amount
+#         shifted_position = alphabet.index(letter) + shift_amount
 
-        shifted_position %= len(alphabet)
-        output_text += alphabet[shifted_position]
-    print(f"Here is the {encode_or_decode}d result: {output_text}")
+#         shifted_position %= len(alphabet)
+#         output_text += alphabet[shifted_position]
+#     print(f"Here is the {encode_or_decode}d result: {output_text}")
 
 
-caesar(original_text=text, shift_amount=shift, encode_or_decode=direction)
+# caesar(original_text=text, shift_amount=shift, encode_or_decode=direction)
