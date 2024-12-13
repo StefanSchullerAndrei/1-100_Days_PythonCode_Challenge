@@ -61,3 +61,18 @@ for student in student_scores:
 print(student_grades)
 
 # ------------------------------------------------------------
+
+# ----------------------NESTING------------------------------
+
+# {
+#     Key: [List], # we can also put lists as value
+#     Key2: {Dict}, # we can also use dictionaries as values.
+# }
+# Dictionaries need to be called with " {} " while lists need to be called with " [] "
+
+# For example
+
+capitals = {
+    "France": "Paris",
+    "Germany": "Berlin",
+}
