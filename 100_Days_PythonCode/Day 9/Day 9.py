@@ -76,3 +76,29 @@ capitals = {
     "France": "Paris",
     "Germany": "Berlin",
 }
+
+# Nested List in Dictionary
+
+travel_log = {
+    "France": ["Paris", "Lille", "Dijon"],
+    "Germany": ["Stuttgart", "Berlin"]
+}
+
+print(travel_log["France"][1]) # printing a specific value inside a key which has a list as value
+
+nested_list = ["A", "B", ["C", "D"]]
+
+print(nested_list[2][1]) #calling an item inside of a list inserted in a list
+
+travel_log = {
+    "France": {
+        "cities_visited": ["Paris", "Lille", "Dijon"],
+        "total_visits": 8,
+    },
+    "Germany": {
+        "cities_visited": ["Berlin", "Hamburg", "Stuttgart"],
+        "total_visits": 12
+    },
+}
+
+print(travel_log["Germany"]["cities_visited"][2]) # printing a value of a list inside of a dictionary which is inside of a dictionary
