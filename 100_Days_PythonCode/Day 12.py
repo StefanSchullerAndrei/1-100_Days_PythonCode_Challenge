@@ -52,3 +52,4 @@ def increase_enemies(enemy):
 
 enemies = increase_enemies(enemies)
 print(f"Enemies outside function: {enemies}")
+
