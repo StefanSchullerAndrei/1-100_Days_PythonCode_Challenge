@@ -8,8 +8,10 @@ DOWN = 270
 LEFT = 180
 RIGHT = 0
 
-class Snake:
+class Snake(Turtle):
+
     def __init__(self):
+        super().__init__()
         self.segments = []
         self.create_snake()
         self.head = self.segments[0]
@@ -21,11 +23,7 @@ class Snake:
     def create_snake(self):
         # ---------------- Method 1 -----------------------
         for position in STARTING_POSITIONS:
-            new_segment = Turtle("square")
-            new_segment.color("white")
-            new_segment.penup()
-            new_segment.goto(position)
-            self.segments.append(new_segment)
+            self.add_segment(position)
         # ----------------- Method 2 ---------------------
         # segment_1 = Turtle("square")
         # segment_1.color("white")
@@ -37,6 +35,17 @@ class Snake:
         # segment_3 = Turtle("square")
         # segment_3.color("white")
         # segment_3.goto(x=-40, y=0)
+
+
+    def add_segment(self, position):
+        new_segment = Turtle("square")
+        new_segment.color("white")
+        new_segment.penup()
+        new_segment.goto(position)
+        self.segments.append(new_segment)
+    def extend(self):
+        # add a new segment to the snake
+        self.add_segment(self.segments[-1].position())
 
 # Programming the snake to automatically move forward and figuring out a way for the tail of the snake to follow where the head is going
     def move(self):
